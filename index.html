@@ -1,34 +1,59 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Nokia</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="container">  
-      
-<!--       <div class="col-md-6">
-         <img id="diplay"src="images/nokia.png">
-      </div> -->
+<html lang="en" >
 
-    </div>
-    
-    <div id='nokia'>
-      <textarea id='screen' name="screen" rows="5" cols="20"></textarea>
-      <button type='button' id="btn1" onclick="onClick('1')">1</button>
-      <button type='button' id="btn2" onclick="onClick('2')">2</button>
-      <button type='button' id="btn3" onclick="onClick('3')">3</button>
-      <button type='button' id="btn4" onclick="onClick('4')">4</button>
-      <button type='button' id="btn5" onclick="onClick('5')">5</button>
-      <button type='button' id="btn6" onclick="onClick('6')">6</button>
-      <button type='button' id="btn7" onclick="onClick('7')">7</button>
-      <button type='button' id="btn8" onclick="onClick('8')">8</button>
-      <button type='button' id="btn9" onclick="onClick('9')">9</button>
-      <button type='button' id="btn0" onclick="onClick('0')">0</button>
-    </div>
-    <script src="script.js"></script>
-    <script src="front.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Nokia 3310</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+</head>
+
+  <head>
+<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">GRUPO 05</h1>
+  <div class="box">
+    <div class="phone">
+    <div class="telefone-corpo">
+      <div onclick="adicionar_texto('')" class="botao1"><div class="botao"> 1 oo</div></div>
+      <div onclick="adicionar_texto('4')" class="botao4"><div class="botao"> 4ghi </div></div>
+      <div onclick="adicionar_texto('7')" class="botao7"><div class="botao"> 7pqrs </div></div>
+      <div class="botao10"><div class="botao"> * + </div></div>
+      
+       <div onclick="adicionar_texto('3')" class="botao3"><div class="botao"> 3def </div></div>
+      <div onclick="adicionar_texto('6')" class="botao6"><div class="botao"> 6mno </div></div>
+      <div onclick="adicionar_texto('9')" class="botao9"><div class="botao"> 9wxyz </div></div>
+      <div class="botao12"><div class="botao"> ⇧ # </div></div>
+      
+      <div onclick="adicionar_texto('2')" class="botao2"><div class="botao"> 2abc </div></div>
+      <div onclick="adicionar_texto('5')" class="botao5"><div class="botao"> 5jkl </div></div>
+      <div onclick="adicionar_texto('8')" class="botao8"><div class="botao"> 8tuv </div></div>
+      <div class="botao0" onclick="adicionar_texto(' ')"><div class="botao"> 0 _</div></div>
+      <div class="ligar-botao"> <div class="ligar"> c </div> </div>
+      <div class="scroll-botao"> <div class="arrows"> < ></div> </div>
+      <div class="telefone-cinza">
+        
+      
+      <div class="phone-azul">
+        <h1 class="nokia">NOKIA</h1>
+        <div  class="tela">
+          <textarea id='display' rows="4" cols='10'></textarea>
+        </div>
+        <div class="speaker1"></div>
+        <div class="speaker2"></div>
+        <div class="speaker3"></div>
+        <div class="speaker4"></div>
+        <div class="speaker5"></div>
+        <div onclick="converter_texto()" class="botao-azul"></div>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
