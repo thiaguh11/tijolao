@@ -40,9 +40,12 @@ function converter_texto() {
   let texto_convertido = "";
   let texto_cortado = texto.trim().split(' ');
   for(x in texto_cortado) {
-    texto_convertido += getKeyByValue(dicionario,texto_cortado[x]);
+    let letra = getKeyByValue(dicionario,texto_cortado[x]);
+    if(letra != null) {
+      texto_convertido += letra
+      document.getElementById("display").value = texto_convertido;
+    }
   };
-  document.getElementById("display").value = texto_convertido;
   clear_text = true;
 }
 
@@ -57,4 +60,9 @@ function adicionar_texto(numero) {
     clear_text = false;
   };
   x.value += numero;
+}
+
+function limpar() {
+  let x = document.getElementById("display");
+  x.value = "";
 }
